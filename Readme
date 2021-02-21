@@ -1,0 +1,29 @@
+Nome: Pedro Henrique Rodrigues Belo
+
+
+Protocolo de comunicação: 
+
+1º O usuário deverá iniciar o servidor executando a classe: TCPServer
+
+2º Para o cliente iniciar uma conversa no Multcast primeiro ele deverá criar uma sala, isso será possível ao executar a classe TCPClient e passar os seguintes parâmetros: 
+
+ a) Passar a String "CRIAR SALA" seguida do IP do cliente;
+ b) O Servidor retornará uma string contendo o IP multcast da sala criada;
+ 
+3º Para entrar na sala criada, o cliente irá executar a classe TCPClient passando os seguintes parâmetros
+ 
+ a) Passar a String "ENTRAR NA SALA" seguida do IP do Cliente e o IPMultcast
+    Ex: "CRIAR SALA" localhost 228.5.6.1
+    
+4º No momento que o cliente entrar na sala ele automaticamente estará apto a enviar as mensagens desejadas ao grupo
+
+5º Para sair bastará o cliente digitar "SAIR!"
+
+6º Para listas as salas e os seus respectivos membros basta o cliente executar a classe TCPClient e passar os seguintes parâmetros: 
+  
+  a) "LISTA SALAS" localhost
+  
+  
+  
+      
+  
